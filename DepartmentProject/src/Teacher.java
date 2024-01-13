@@ -86,7 +86,13 @@ public class Teacher extends Person {
                 "\nLương: " + String.format("%.3f",this.__salary);
     }
     private String toStringJapanese() {
-        return "";
+        return "番号: " + this.__id +
+                "\n" + super.toString() +
+                "\nメール:" + this.__email +
+                "\n連絡: " + this.__phoneNumber +
+                "\n研究数: " + this.__numberResearch +
+                "\nレベル: " + this.__level +
+                "\n給料：" + String.format("%.3f",this.__salary);
     }
     private String toStringEnglish() {
         return  "ID: " + this.__id +
